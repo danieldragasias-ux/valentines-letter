@@ -8,10 +8,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="love letter 2.css" />
+    <link rel="stylesheet" href="love-letter-2.css" />
   </head>
   <body>
-    <!-- tiktok meowish -->
     <div class="envlope-wrapper">
       <div id="envelope" class="close">
         <div class="front flap"></div>
@@ -19,7 +18,7 @@
         <div class="letter">
           <div class="words line1">To: Radu</div>
           <div class="words line2">You are stuck with me.</div>
-          <div class="words line3">    Congrats!</div>
+          <div class="words line3">Congrats!</div>
           <div class="words line4">xoxo Daniel,</div>
         </div>
         <div class="hearts">
@@ -34,26 +33,31 @@
       <button id="reset">Close</button>
     </div>
 
-    document.addEventListener("DOMContentLoaded", function () {
-  const envelope = document.getElementById("envelope");
-  const btnOpen = document.getElementById("open");
-  const btnReset = document.getElementById("reset");
+    <!-- JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const envelope = document.getElementById("envelope");
+        const btnOpen = document.getElementById("open");
+        const btnReset = document.getElementById("reset");
 
-  function openEnvelope() {
-    envelope.classList.add("open");
-    envelope.classList.remove("close");
-  }
+        function openEnvelope() {
+          envelope.classList.add("open");
+          envelope.classList.remove("close");
+        }
 
-  function closeEnvelope() {
-    envelope.classList.add("close");
-    envelope.classList.remove("open");
-  }
+        function closeEnvelope() {
+          envelope.classList.add("close");
+          envelope.classList.remove("open");
+        }
 
-  envelope.addEventListener("click", openEnvelope);
-  btnOpen.addEventListener("click", openEnvelope);
-  btnReset.addEventListener("click", closeEnvelope);
-});
-    <script src="love letter 2.js"></script>
+        envelope.addEventListener("click", openEnvelope);
+        btnOpen.addEventListener("click", openEnvelope);
+        btnReset.addEventListener("click", closeEnvelope);
+      });
+    </script>
+
+    <!-- Optional: externe JS-Datei, falls du sie noch benutzen willst -->
+    <script src="love-letter-2.js"></script>
   </body>
 </html>
 
